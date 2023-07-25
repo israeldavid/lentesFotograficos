@@ -1,0 +1,29 @@
+{
+  "name": "lentesfotograficos",
+  "version": "1.0.0",
+  "description": "API para listar los modelos de lentes fotograficos y su calificacion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israeldavid/lentesFotograficos.git"
+  },
+  "keywords": [
+    "photo",
+    "photography",
+    "lens",
+    "reviews"
+  ],
+  "author": "DAvid Ortega Mazzini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israeldavid/lentesFotograficos/issues"
+  },
+  "homepage": "https://github.com/israeldavid/lentesFotograficos#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
