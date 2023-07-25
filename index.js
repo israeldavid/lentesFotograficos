@@ -19,12 +19,19 @@ app.get('/listarObjetivos', (req, res) => {
   res.json(objetivos);
 });
 
-app.listen(port, () => {
-  console.log(`Servidor escuchando en el puerto ${port}`);
-});
-
 app.get('/listarObjetivo/:id',(req,res) => {
   var objId = req.params.id;
-  res.send(`Bienvenido a la API de los lentes. El ID del lente es: ${objId}`);
+  const objetivo = [
+    { id: 1, descripcion: 'Sony 55mm F1.8', numeromm:objId }
+  ];
+  res.send(objetivo);
 
 })
+
+app.listen(port, (err) => {
+  if (err) {
+  console.log(`There was a problem with app.listen: ${err}`);
+  }
+  console.log(`Listening on port ${port}`);
+  });
+
